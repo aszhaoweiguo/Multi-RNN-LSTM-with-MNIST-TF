@@ -2,14 +2,12 @@
 
 """
     Multi layer RNN with LSTM unit
-
-    @ Accuracy:
+    @ Author: Weiguo ZHAO
+    @ Accuracy: 0.97
 """
 
 import tensorflow as tf
-import create_data
 import numpy as np
-import time
 from tensorflow.examples.tutorials.mnist import input_data
 
 
@@ -91,31 +89,3 @@ print("Test accuracy %g" % (sess.run(accuracy, feed_dict={_X: mnist.test.images,
                                                           y: mnist.test.labels,
                                                           keep_prob: 1.0,
                                                           batch_size: mnist.test.images.shape[0]})))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
